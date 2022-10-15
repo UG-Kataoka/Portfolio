@@ -156,6 +156,7 @@ footer {
   #Portfolio ul {
     display: block;
     justify-content:flex-start;
+    width: 85%;
   }
   #Portfolio li {
   width: auto;
