@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #0f3663;
+  background-color:#f1f0f0d8;
+  font-size: 16px;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+
+.mainvisual{
+  width: 100%;
+  height: 400px;
+  background:linear-gradient(112deg,rgba(248,198,215,1),rgba(175,233,249,1));
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.site-title {
+  font-size:100px;
+  padding-top:120px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*-------------------------------------------
+AboutとPortfolio共通
+-------------------------------------------*/
+
+.section-title {
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 3px #0f3663;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  text-align: center;
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about img {
+  width: 180px;
+  height: 240px;
+  border-radius: 50%;
+  margin-right: 70px;
+}
+#about .text {
+  text-align: left;
+}
+#about .content-title {
+  font-size: 25px;
+  text-align: center;
+}
+.content-title-jp{
+  font-size: 45px;
+  text-align: center;  
+}
+
+/*-------------------------------------------
+Portfolio
+-------------------------------------------*/
+
+#Portfolio .content-title {
+  font-size: 22px;
+  text-align: center;
+}
+#Portfolio ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Portfolio li {
+  width: 28%;
+  text-align: left;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+
+footer {
+  font-size: 12px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/*-------------------------------------------
+レスポンシブ対応
+-------------------------------------------*/
+@media screen and (max-width: 480px) {
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  .mainvisual{
+    width: 100%;
+    height: 200px;
+    background:linear-gradient(112deg,rgba(248,198,215,1),rgba(175,233,249,1));
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+  .site-title {
+    font-size:40px;
+    padding-top:75px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /*-------------------------------------------
+  AboutとPortfolio共通
+  -------------------------------------------*/
+  .section-title {
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: solid 3px #0f3663;
+  }
+  .wrapper {
+    max-width: 480px;
+    margin: 0 auto 0px auto;
+    text-align: center;
+  }
+  /*-------------------------------------------
+  About
+  -------------------------------------------*/
+  #about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about img {
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+  }
+  #about .text {
+    text-align: left;
+  }
+  #about .content-title {
+    font-size: 15px;
+    text-align: center;
+  }
+  .content-title-jp{
+    font-size: 30px;
+    text-align: center; 
+  }
+  /*-------------------------------------------
+  Portfolio
+  -------------------------------------------*/
+  #Portfolio .content-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  #Portfolio ul {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #Portfolio li {
+  width: 100%;
+  text-align: left; 
+  }
+}
